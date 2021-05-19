@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include <algorithm> 
 using namespace std;
 int main(){
@@ -16,9 +15,6 @@ int main(){
             // cout << jml << " - "<< jawab << "\n";
             if(jml < 0) jml = 0;
         }
-        if(jawab==0)
-            cout <<"Losing streak.\n";
-        else
-            cout <<"The maximum winning streak is "<< jawab <<".\n";
+        jawab==0 ? cout <<"Losing streak.\n" : cout <<"The maximum winning streak is "<< jawab <<".\n";
     } return 0;
 }
